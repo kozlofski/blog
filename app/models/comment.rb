@@ -1,5 +1,4 @@
 class Comment < ApplicationRecord
-  belongs_to :article
-
-  VALID_STATUSES = ['']
+  include Visible
+  belongs_to :article  
 end
